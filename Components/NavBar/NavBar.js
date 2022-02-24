@@ -7,7 +7,7 @@ import Mode from '../Mode/Mode';
 const NavBar = (props) => {
     
     return <>
-        <nav className="flex fixed nav flex-row justify-center  w-full shadow-lg   shadow-blue-500 z-50  h-20  bg-inherit">
+        <nav className="flex   flex-row justify-center  w-full shadow-lg   shadow-blue-500 z-50  h-20  bg-inherit">
             <div className='text-center  my-auto ml-2  justify-center flex'>
                 <li className='list-none text-center items-center m-auto justify-center flex font-semibold  font-serif text-inherit text-lg'><Link href='/'>Code Hustlers</Link></li>
             </div>
