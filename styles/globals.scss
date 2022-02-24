@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// Google Fonst
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+   
+}
+
+
+$Lobster: 'Lobster Two', cursive;
+$Roboto:'Roboto Slab', serif;
+$DM:'DM Serif Display', serif;
+
+
+.DM{
+    font-family: $DM;
+}
+
+
+.Lobster{
+    font-family: $Lobster;
+}
+
+.Roboto{
+    font-family: $Roboto;
+}
+
+.btn:hover{
+    color: white;
+  
+    background: linear-gradient(112deg, #AAFFEC -63.59%, #ff4ecd -20.3%,#0070F3 70.46%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    border-radius: 0.5rem;
+    text-align: center;    
+    display: flex; 
+    border-radius: 0.5rem;
+    border: none;
+}
+.btn{
+   border: 2px solid blue;
+background: transparent;
+  background-color: transparent;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    border-radius: 0.5rem;
+    text-align: center;    
+    display: flex;
+    color: blue;
+    border-radius: 0.5rem;  
+     
+    
+}
+.footer{
+    margin-top: 10rem;
+}
+.nav{
+    top:-5px;
+}
