@@ -1,13 +1,13 @@
 import React from 'react'
 import AboutPage from '../Components/About.js/About'
-
-const About = () => {
+import Seo from '../Components/Seo/Seo';
+const about = () => {
   return (
-      <div className='flex'>
-          
-          <AboutPage/>
-    </div>
+      <>
+          <Seo SeoTitle={ "About"}/> 
+          <AboutPage />
+    </>
   )
 }
 
-export default About
+export default about

@@ -14,7 +14,11 @@
     padding: 0;
    
 }
-
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 $Lobster: 'Lobster Two', cursive;
 $Roboto:'Roboto Slab', serif;
@@ -64,6 +68,87 @@ background: transparent;
      
     
 }
+.NavBar{
+  height: 80px;
+}
 .footer{
     margin-top: 10rem;
+}
+@media screen and (max-width:850px){
+    .Img-Resp{
+        width: 180px;
+    }
+
+    .Home-h1-Resp{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:651px){
+    .NavBar{
+        display: none;
+    }
+.Nav-ul{
+    display: none !important ;
+}
+.Home-h1-Resp{
+    font-size: 25px;
+}
+.Home-para{
+    font-size: 10px;
+}
+.Hambuger{
+    display: flex;
+    flex-direction: column;
+    width: 15px;
+    background-color: inherit;
+    color: inherit;
+}
+.line{
+    width: 15px;
+    background-color: inherit;
+    color: inherit;
+}
+}
+
+@media screen and (max-width:450px){
+    .Form-input{
+        width: 13rem;
+    }
+    .About-Para-Resp{
+        width: 100%;
+    }
+}
+@media screen and (max-width:650px){
+    .Menu{
+        margin-top: 2rem;
+    }
+    .Navul {
+        display: flex;
+        flex-direction: column;
+        /* margin: 154px auto; */
+        margin-top: 155px;
+    }
+     .Img-Resp{
+        width: 90px;
+    }
+    .Nav{
+        display: flex !important;
+        flex-direction: row;
+        background-color: inherit;
+        color: inherit;
+    
+    
+    }
+    .Nav-Logo-Div{
+        margin: auto;
+        
+    }
+    .Nav-Logo{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+}
+.Nav{
+    display: none;
 }
