@@ -6,6 +6,8 @@ import NavBarPc from '../Components/NavBar/NavBarPc';
 import NavResp from '../Components/NavBar/NavResp';
 import 'aos/dist/aos.css'
 import Aos from 'aos'
+import 'react-toastify/dist/ReactToastify.css';
+
 function MyApp({ Component, pageProps }) {
   const [state, setstate] = useState(false)
   useEffect(() => {

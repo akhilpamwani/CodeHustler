@@ -1,15 +1,12 @@
-
-
 import HomeComp from '../Components/Home/Home';
-
 import Seo from '../Components/Seo/Seo';
-
 import React from 'react'
-import { ButtonGradientWithOutLinkComponent } from '../Components/Button/Link/ButtonGradientWithoutLinkComponent';
-import { ButtonBlueWithOutLinkComponent } from '../Components/Button/Link/ButtonBlueWithOutLink';
-import Blogs from '../Components/Blogs/Blogs';
+import { ButtonGradientWithOutLinkComponent } from '../Components/Button/WithOutLink/ButtonGradientWithoutLinkComponent';
+import { ButtonBlueWithOutLinkComponent } from '../Components/Button/WithOutLink/ButtonBlueWithOutLink';
+
 import About from '../Components/About.js/About';
 import { Contact } from "../Components/Contact/Contact";
+import { Blog } from '../Components/Blogs/Blog';
 
 export default function Home() {
   
@@ -22,7 +19,7 @@ export default function Home() {
       <ButtonGradientWithOutLinkComponent ButtonGradient={'Popular Blogs'} />
         <ButtonBlueWithOutLinkComponent ButtonBlue={'Recents Blogs'} /></div>
    <About/>
-      <Blogs />
+      <Blog />
       <Contact/>
      
       

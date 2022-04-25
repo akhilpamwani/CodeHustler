@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonBlueComponent } from '../Components/Button/WithOutLink/ButtonBlueComponent'
+import { ButtonBlueComponent } from '../Components/Button/Link/ButtonBlueComponent'
 
  const ErrorPage = () => {
   return (
