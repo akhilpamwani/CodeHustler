@@ -6,7 +6,7 @@ import { ButtonBlueWithOutLinkComponent } from '../Components/Button/WithOutLink
 
 import About from '../Components/About.js/About';
 import { Contact } from "../Components/Contact/Contact";
-import { Blog } from '../Components/Blogs/Blog';
+
 
 export default function Home() {
   
@@ -19,7 +19,7 @@ export default function Home() {
       <ButtonGradientWithOutLinkComponent ButtonGradient={'Popular Blogs'} />
         <ButtonBlueWithOutLinkComponent ButtonBlue={'Recents Blogs'} /></div>
    <About/>
-      <Blog />
+      
       <Contact/>
      
       
