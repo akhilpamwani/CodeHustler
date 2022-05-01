@@ -16,10 +16,12 @@ export const Contact = () => {
   
   const handleSubmit=(e)=>{
     e.preventDefault();
-    axios.post("http://localhost:8000/ContactData",
+    console.log("url", process.env.NEXT_PUBLIC_CONTACT_API_URL );
+    axios.post(process.env.NEXT_PUBLIC_CONTACT_API_URL,
     {name:name,email:email,subject:subject,detail:detail })
-    .then(()=>{
-      toast.success("Contact data has been saved Successfully", {
+      .then(() => {
+     
+       toast.success("Contact data has been saved Successfully", {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
@@ -27,7 +29,8 @@ export const Contact = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        }); 
+       }); 
+        
     
     }).catch(()=>{
       toast.error(" Contact data has not been saved Successfully ", {

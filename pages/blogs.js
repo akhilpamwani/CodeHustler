@@ -15,7 +15,7 @@ const blogs = ({data}) => {
    
   <div className="container px-5 py-24 mx-auto">
                    <div className="flex flex-wrap -m-4">
-            {data.map((data) => {   {/** At the place of this if a use this code     {  allBlogs?.map((data) => {
+            {data.slice(0,12).map((data) => {   {/** At the place of this if a use this code     {  allBlogs?.map((data) => {
                           
                         OR 
                            { allBlogs && allBlogs.map((data) => {
@@ -49,7 +49,7 @@ export const getServerSideProps= async()=> {
  
 
 
-  const res = await fetch('http://localhost:8000/BlogRead')
+  const res = await fetch(process.env.NEXT_PUBLIC_BLOG_READ_API_URL)
   const  data= await res.json();
   return {
     props: {
