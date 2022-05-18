@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps }) {
       <NavBarPc btn={() => setstate(!state)} />
       <NavResp btn={() => setstate(!state)}/>
       <Component {...pageProps} />
+      
       <Footer/>
         
  </main>
