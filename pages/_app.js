@@ -11,12 +11,19 @@ import 'react-toastify/dist/ReactToastify.css';
 function MyApp({ Component, pageProps }) {
   const [state, setstate] = useState(false)
   useEffect(() => {
+    import('tw-elements');
+}, []);
+  useEffect(() => {
+   
     Aos.init({
       anchorPlacement: 'top-bottom',
-      delay:"10000ms",
+      duration: 1000,
+      easing: 'ease-in-out',
+      
+      delay: 100,
       
     })
-    
+  
     
   },
   []);
