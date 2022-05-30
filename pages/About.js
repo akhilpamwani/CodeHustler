@@ -5,6 +5,7 @@ const about = () => {
   return (
     <>
       <Seo SeoTitle={"About"} />
+    
       <AboutPage />
     </>
   )

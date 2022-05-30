@@ -13,11 +13,12 @@ export default function Home() {
   return (
     <>
    
-      <Seo SeoTitle={ "Home"}/> 
+      <Seo SeoTitle={"Home"} />
+      <div className=' relative top-52  mb-96'>
       <HomeComp />
-      <div className="flex flex-auto mt-5 mx-5 m-auto justify-center"data-aos="fade-up">
+      <div className="flex flex-auto  mx-5 m-auto justify-center"data-aos="fade-up">
       <ButtonGradientWithOutLinkComponent ButtonGradient={'Popular Blogs'} />
-        <ButtonBlueWithOutLinkComponent ButtonBlue={'Recents Blogs'} /></div>
+        <ButtonBlueWithOutLinkComponent ButtonBlue={'Recents Blogs'} /></div></div>
    <About/>
       
       <Contact/>

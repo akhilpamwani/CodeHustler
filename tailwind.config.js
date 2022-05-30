@@ -1,4 +1,5 @@
 module.exports = {
+
   darkMode: "class",
   content: [
       './pages/**/*.{js,ts,jsx,tsx}',
@@ -9,5 +10,5 @@ module.exports = {
       extend: {},
   },
   plugins: [
-      require('tw-elements/dist/plugin')
+   
   ], }

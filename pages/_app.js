@@ -9,10 +9,8 @@ import Aos from 'aos'
 import 'react-toastify/dist/ReactToastify.css';
 
 function MyApp({ Component, pageProps }) {
-  const [state, setstate] = useState(false)
-  useEffect(() => {
-    import('tw-elements');
-}, []);
+  const [state, setstate] = useState(true)
+  
   useEffect(() => {
    
     Aos.init({
@@ -28,7 +26,7 @@ function MyApp({ Component, pageProps }) {
   },
   []);
   return(  
-    <main className={state ? "bg-white text-black" : "dark:bg-slate-900 dark:text-white"}>
+    <main className={state ? " bg-white text-black" : "bg-slate-900 text-white"}>
       <NavBarPc btn={() => setstate(!state)} />
       <NavResp btn={() => setstate(!state)}/>
       <Component {...pageProps} />
