@@ -10,7 +10,7 @@ const blogs = ({data}) => {
     <>
       <Seo SeoTitle={ "Blogs"}/> 
       
-      <HrComponent Heading={ 'Blogs'}/>
+     <HrComponent  Heading={ 'Blogs'}/>
       <section className="text-inherit body-font">
    
   <div className="container px-5 py-24 mx-auto">
@@ -18,8 +18,8 @@ const blogs = ({data}) => {
             {data.slice(0,12).map((data) => {   
                           return (
                               
-                          <div className="p-4 lg:w-1/3" key={data.Title}>
-                              <div className="h-full bg-inherit bg-opacity-75 px-8 pt-16 pb-24 rounded-lg  border-2  border-blue-500 overflow-hidden text-center relative">
+                          <div className="p-4 lg:w-1/2 blog-resp" key={data.Title}>
+                              <div className="h-full bg-inherit bg-opacity-75 blog_resp px-8 pt-16 pb-24 rounded-lg  border-2  border-blue-500 overflow-hidden text-center relative">
                                   <h1 className="title-font sm:text-2xl text-xl font-medium text-inherit mb-3">{data.Title}</h1>
                                   <p className="leading-relaxed mb-3">{data.Paragraph}</p>
                                 

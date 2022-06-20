@@ -42,7 +42,7 @@ const slugify = ({getData}) => {
   return (
     <>
       {getData.slug ?
-        <div className='text-center text-inherit bg-inherit w-full mt-40 ' >
+        <div className='flex-col flex text-center text-inherit bg-inherit w-full  m-auto relative top-36   ' >
           <Seo SeoTitle={`${getData.Title}`} />
        
 

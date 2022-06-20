@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-// Google Fonst
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
@@ -14,28 +14,27 @@
     padding: 0;
    
 }
+
 html,body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-$Lobster: 'Lobster Two', cursive;
-$Roboto:'Roboto Slab', serif;
-$DM:'DM Serif Display', serif;
+
 
 
 .DM{
-    font-family: $DM;
+    font-family: 'DM Serif Display', serif;
 }
 
 
 .Lobster{
-    font-family: $Lobster;
+    font-family: 'Lobster Two', cursive;
 }
 
 .Roboto{
-    font-family: $Roboto;
+    font-family: 'Roboto Slab', serif;
 }
 
 .btn:hover{
@@ -76,6 +75,17 @@ background: transparent;
 .footer{
     margin-top: 10rem;
 }
+.blog-resp{
+    justify-content: center !important;
+    margin: auto !important;
+    
+     }
+@media screen and (max-width:1023px){
+    .blog_resp{
+    width: 300px !important;
+    }
+}
+
 @media screen and (max-width:850px){
     .Img-Resp{
         width: 180px;
@@ -156,4 +166,9 @@ background: transparent;
 }
 .Nav{
     display: none;
+}
+@media screen and (max-width:345px){
+    .blog_resp{
+    width: 250px !important;
+    }
 }
