@@ -6,10 +6,15 @@ import NavBarPc from '../Components/NavBar/NavBarPc';
 import NavResp from '../Components/NavBar/NavResp';
 import 'aos/dist/aos.css'
 import Aos from 'aos'
+
 import 'react-toastify/dist/ReactToastify.css';
 
+
+
 function MyApp({ Component, pageProps }) {
+ 
   const [state, setstate] = useState(true)
+ 
   
   useEffect(() => {
    
@@ -21,20 +26,21 @@ function MyApp({ Component, pageProps }) {
       delay: 100,
       
     })
-  
+   
     
   },
   []);
-  return(  
+  return (  
+  
     <main className={state ? " bg-white text-black" : "bg-slate-900 text-white"}>
       <NavBarPc btn={() => setstate(!state)} />
       <NavResp btn={() => setstate(!state)}/>
       <Component {...pageProps} />
-      
       <Footer/>
-        
  </main>
-
+     
+        
+ 
   )}
 
 export default MyApp

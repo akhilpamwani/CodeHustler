@@ -4,6 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 const NavResp = (props) => {
+ 
+   
+  
     const [state, setstate] = useState(true) 
   return (
       <>

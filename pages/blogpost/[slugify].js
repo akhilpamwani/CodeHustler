@@ -38,23 +38,7 @@ export const getStaticProps = async (context) => {
 
 const slugify = ({getData}) => {
  
-//   const [getData, setgetData] = useState({})
-//   const router=useRouter()
-//   const { _id } = useParams();
-//   useEffect(() => {
-//     if (!router.isReady) return;
-    
-//       axios.get(`http://localhost:8000/BlogReadOne/${_id}`)
-//         .then((response) => {
-//           // router.push(`/blogsingle?${getData.slug}`)
-//           setgetData(response.data)
-//         }).catch((error) => {
-//           console.log(error)
-//         })
-    
 
-  
-// }, [router.isReady])
   return (
     <>
       {getData.slug ?

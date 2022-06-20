@@ -15,13 +15,7 @@ const blogs = ({data}) => {
    
   <div className="container px-5 py-24 mx-auto">
                    <div className="flex flex-wrap -m-4">
-            {data.slice(0,12).map((data) => {   {/** At the place of this if a use this code     {  allBlogs?.map((data) => {
-                          
-                        OR 
-                           { allBlogs && allBlogs.map((data) => {
-                        It does not shows me the blogpost that are saved.
-                        
-                        */}  
+            {data.slice(0,12).map((data) => {   
                           return (
                               
                           <div className="p-4 lg:w-1/3" key={data.Title}>
