@@ -49,7 +49,7 @@ export const Contact = () => {
     <>
       
                 <HrComponent Heading={ 'Contact'}/>
-          <div className="flex flex-col m-auto justify-center items-center w-9/12 mt-10 content-center   border-2 border-blue-500 rounded-md" data-aos="zoom-in-down">
+          <div className="flex flex-col m-auto justify-center items-center w-9/12 mt-10 content-center   border-2 border-blue-500 rounded-md" >
               <label htmlFor="Name" className="text-sm text-center  my-5 font-semibold font-sans" >Name</label>
         <input type='text' name='name' className='bg-inherit outline-none  border-2 rounded-md border-blue-500 w-80 text-center Form-input' placeholder='Enter Your Name'
         value={name}
