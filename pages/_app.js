@@ -21,9 +21,9 @@ function MyApp({ Component, pageProps }) {
   <>
   
    {/* <main className={state ? " bg-white text-black" : "bg-slate-900 text-white"}> */}
+    <Component {...pageProps}  />
     <NavBarPc btn={() => setstate(!state)} />
     <NavResp btn={() => setstate(!state)}/>
-    <Component {...pageProps}  />
     <Footer/>
   {/* </main> */}
 
