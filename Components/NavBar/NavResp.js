@@ -21,9 +21,9 @@ const NavResp = (props) => {
                 <li className=" list-none mx-2 hover:bg-gradient-to-r hover:from-blue-400  p-1.5 hover:to-blue-500 cursor-pointer  hover:rounded hover:text-white font-medium Lobster" onClick={()=>setstate(!state)} ><Link href='/contact'>Contact</Link></li>
             </ul>
                 
-            <div onClick={props.btn} className="flex">
+            {/* <div onClick={props.btn} className="flex">
               <Mode/>
-                    </div>
+                    </div> */}
                   <div className="w-12 h12 mt-4 unset">
             <Image src="/menu.png" alt='' width="48" height="48"  onClick={()=>setstate(!state)}  className="h-12 w-12 m-1 image flex  justify-end content-end items-end mt-5"></Image> 
             </div>  </nav>

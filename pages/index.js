@@ -13,9 +13,9 @@ export default function Home() {
     <>
    
       <Seo SeoTitle={"Home"} />
-      <div className=' relative top-52  mb-80'>
+      <div className=' relative top-52 z-0 mb-80'>
       <HomeComp />
-      <div className="flex flex-auto  mx-5 m-auto justify-center">
+      <div className="flex flex-auto z-0  mx-5 m-auto justify-center">
       <ButtonGradientWithOutLinkComponent ButtonGradient={'Popular Blogs'} />
         <ButtonBlueWithOutLinkComponent ButtonBlue={'Recents Blogs'} /></div></div>
    <About/>

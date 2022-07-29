@@ -20,28 +20,29 @@ export const Contact = () => {
     axios.post(process.env.NEXT_PUBLIC_CONTACT_API_URL,
     {name:name,email:email,subject:subject,detail:detail })
       .then(() => {
-     
-       toast.success("Contact data has been saved Successfully", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-       }); 
+     console.log("Contact data has been saved Successfully");
+      //  toast.success("Contact data has been saved Successfully", {
+      //   position: "top-right",
+      //   autoClose: 5000,
+      //   hideProgressBar: false,
+      //   closeOnClick: true,
+      //   pauseOnHover: true,
+      //   draggable: true,
+      //   progress: undefined,
+      //  }); 
         
     
-    }).catch(()=>{
-      toast.error(" Contact data has not been saved Successfully ", {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        });
+      }).catch(() => {
+      console.log(" Contact data has not been saved Successfully ");
+      // toast.error(" Contact data has not been saved Successfully ", {
+      //   position: "top-right",
+      //   autoClose: 5000,
+      //   hideProgressBar: false,
+      //   closeOnClick: true,
+      //   pauseOnHover: true,
+      //   draggable: true,
+      //   progress: undefined,
+      //   });
     })
   }
 

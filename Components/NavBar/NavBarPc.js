@@ -8,7 +8,7 @@ const NavBarPc = (props) => {
 
     return <>
       
-        <nav className="flex z-50  text-inherit   flex-row justify-center   w-full shadow-lg  NavBar  shadow-blue-500      bg-inherit" >
+        <nav className="flex z-50   bg-white text-black  flex-row justify-center   w-full shadow-lg  NavBar  shadow-blue-500      bg-inherit" >
             <div className='text-center  my-auto ml-2  justify-center flex'>
                 <li className='list-none text-center items-center m-auto justify-center flex font-semibold  font-serif text-inherit text-lg'><Link href='/'>Code Hustlers</Link></li>
             </div>
@@ -19,9 +19,9 @@ const NavBarPc = (props) => {
                 <li className=" list-none mx-2 hover:bg-gradient-to-r hover:from-blue-400  p-1.5 hover:to-blue-500 cursor-pointer  hover:rounded hover:text-white font-medium Lobster" ><Link href='/contact' >Contact</Link></li>
             </ul>
                 
-            <div onClick={props.btn} className="flex">
+            {/* <div onClick={props.btn} className="flex">
               <Mode/>
-                    </div>
+                    </div> */}
 
            
         </nav>
